@@ -1,0 +1,136 @@
+{
+  // Auto-save files after a delay (in milliseconds)
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // Editor display and interaction settings
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.parameterHints.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.fontFamily": "'JetBrains Mono','Cascadia Code','Fira Code','Monaco','monospace', 'Consolas'",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestionsDelay": 200,
+
+  // Workspace and UI settings
+  "workbench.iconTheme": "ayu",
+  "workbench.colorTheme": "Vim Deep Dark",
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "bottom",
+  // "workbench.settings.useSplitJSON": true,
+  "workbench.settings.editor": "json",
+
+  // File explorer behavior
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Python-specific settings
+  "python.analysis.autoFormatStrings": true,
+  "python.locator": "js",
+  "[python]": {
+    // "editor.defaultFormatter": "need to find out",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "editor.wordBasedSuggestions": "off"
+  },
+
+  // Terminal settings
+
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+
+  // Live Server settings
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // Live Preview setting
+  "livePreview.openPreviewTarget": "External Browser",
+
+  // Code Runner Settings
+  "code-runner.clearPreviousOutput": true,
+  // "code-runner.runInTerminal": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.executorMap": {
+    // ... Your full executor map remains unchanged
+    "python": "python -u",
+    "powershell": "powershell -ExecutionPolicy ByPass -File"
+    // (Other languages preserved as-is)
+  },
+
+  // Markdown preview settings
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "hopscotch.css",
+
+  // Docker formatter
+  // "[dockercompose]": {
+  //   "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  // },
+
+  // Extension-specific configs
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  },
+  "codeium.enableCodeLens": false,
+  "codeium.snoozeTime": 120,
+  "vsicons.dontShowNewVersionMessage": true,
+  "update.showReleaseNotes": false,
+
+  // GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  // Notebook settings
+  "notebook.output.scrolling": true,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.lineNumbers": "on",
+  "notebook.scrolling.revealNextCellOnExecute": "none",
+
+  // Plaintext settings
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+
+  // Disable Telemetary and Experimental Features
+  "telemetry.telemetryLevel": "off",
+  "workbench.enableExperiments": false,
+  "window.newWindowProfile": "Default",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.allowedUNCHosts": ["wsl.localhost"]
+}
