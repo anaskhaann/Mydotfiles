@@ -1,0 +1,10 @@
+# Avoid committing machine-specific or secret files
+*.bak
+*.log
+*.env
+*.pem
+*.key
+*.crt
+
+# Optional: ignore winget if you export it per machine
+packages/winget-packages.json

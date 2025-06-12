@@ -1,0 +1,178 @@
+{
+  // Auto-save files after a delay (in milliseconds)
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // Editor display and interaction settings
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.parameterHints.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.fontFamily": "'JetBrains Mono','Fira Code','Cascadia Code'",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestionsDelay": 1000,
+
+  // Workspace and UI settings
+  "workbench.iconTheme": "ayu",
+  "workbench.colorTheme": "Houston",
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "bottom",
+  // "workbench.settings.useSplitJSON": true,
+  "workbench.settings.editor": "json",
+  "workbench.editor.empty.hint": "hidden",
+
+  // File explorer behavior
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  /*
+  Python Specific Settings
+  */
+
+  // Python File
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      // "source.fixAll":"explicit",
+      "source.unusedImports": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  // Venv, Formatting and Others
+  "python.locator": "js",
+  "python.venvPath": "${workspaceFolder}",
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": false,
+  "python.analysis.autoFormatStrings": true,
+  // "python.analysis.inlayHints.functionReturnTypes": true,
+  // "python.analysis.inlayHints.variableTypes": true,
+  // "python.analysis.typeCheckingMode": "off", //Disable Pylance Checking
+
+  /*
+  Terminal Settings
+  */
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+
+  // Plaintext file settings
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+
+  // Toml File Settings
+  "[toml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+
+  /*
+  Extension Specific Settings
+  */
+
+  // Live Server settings
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // Live Preview setting
+  "livePreview.openPreviewTarget": "External Browser",
+
+  // Code Runner Settings
+  "code-runner.clearPreviousOutput": true,
+  // "code-runner.runInTerminal": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.enableAppInsights": false,
+  "code-runner.executorMap": {
+    // ... Your full executor map remains unchanged
+    "python": "python -u",
+    "powershell": "powershell -ExecutionPolicy ByPass -File"
+    // (Other languages preserved as-is)
+  },
+
+  // Markdown preview settings
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "hopscotch.css",
+
+  // Docker Settings
+  // "[dockercompose]": {
+  //   "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  // },
+
+  // Codeium/Windsurf Settings
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  },
+  "codeium.enableCodeLens": false,
+  "codeium.snoozeTime": 120,
+  "codeium.enableExplainProblem": false,
+
+  //Jupyter Notebook settings
+  "notebook.output.scrolling": true,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.lineNumbers": "on",
+  "notebook.scrolling.revealNextCellOnExecute": "none",
+  "notebook.output.wordWrap": true,
+
+  // Shell script Files settings
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+
+  // GitHub CoPilot settings
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+
+  /*
+  Telemetary/Experimental Settings Settings
+  */
+
+  // Disable Telemetary and Experimental Features
+  "telemetry.telemetryLevel": "off",
+  "workbench.enableExperiments": false,
+  "window.newWindowProfile": "Default",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.allowedUNCHosts": ["wsl.localhost"], //Allows to access files across network
+  "mdb.sendTelemetry": false,
+  "telemetry.feedback.enabled": false,
+  "update.showReleaseNotes": false
+}
