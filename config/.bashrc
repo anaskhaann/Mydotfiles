@@ -1,15 +1,21 @@
-# Some Special Characters
-# \u: username
-# \s: name of the shell
-# \h: hostname upto the first .
-# \w: current working directory
-# \W: Basename of the current working directory
-# \t: current time in 24-h format
-# \n: new line
+# Colours for Prompts
+# setaf --> foreground
+cyan=$(tput setaf 051)
+purple=$(tput setaf 005)
+green=$(tput setaf 71)
+yellow=$(tupt setaf 228)
+white=$(tput setaf 15)
+bold=$(tput bold)
+reset=$(tput sgr0) #reset
 
-# Adding Custom Prompt
-# username@hostname (Base directory) ->
-PS1="\u@\h (\W) -> "
+# \[\] --> To handle Continuity for scripts
+# ${} --> For accessing variable
+PS1="\[${bold}\]\n"
+PS1+="\[${purple}\]\u"  #username
+PS1+="\[${white}\] at " #username
+PS1+="\[${green}\]\h "  #hostname
+PS1+="\[${white}\]in "
+PS1+="\[${yellow}\]\W" #base directory
+PS1+="\n"              #new line
+PS1+="\[$(white)\]-> \[$(reset)\]"
 export PS1
-
-# $() --> Results of command inside bracket
