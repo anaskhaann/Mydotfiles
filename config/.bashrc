@@ -9,9 +9,9 @@ reset=$(tput sgr0) #reset
 
 # Custom Prompt
 PS1="\[${bold}\]\n"
-PS1+="\[${purple}\]\u"  #username
-PS1+="\[${white}\] at " #username
-PS1+="\[${green}\]\h "  #hostname
+PS1+="\[${purple}\]\u" #username
+PS1+="\[${white}\]@"   #username
+PS1+="\[${green}\]\h " #hostname
 PS1+="\[${white}\]in "
 PS1+="\[${yellow}\]\W" #base directory
 PS1+="\n"              #new line
