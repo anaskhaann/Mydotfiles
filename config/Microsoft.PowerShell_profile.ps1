@@ -9,9 +9,9 @@ function prompt {
 
     # Print Git branch in yellow (if exists)
     if ($gitBranch) {
-        Write-Host " ($gitBranch)" -NoNewline -ForegroundColor Cyan
+        Write-Host " on $gitBranch" -ForegroundColor Cyan
     }
 
     # Prompt symbol
-    return "> "
+    return "-> "
 }
