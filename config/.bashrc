@@ -1,5 +1,6 @@
 # Colours for Prompts
 cyan=$(tput setaf 051)
+red=$(tput setaf 196)
 purple=$(tput setaf 005)
 green=$(tput setaf 71)
 yellow=$(tput setaf 228)
@@ -24,10 +25,17 @@ parse_git_branch() {
     fi
 }
 
+# Dynamic color for root vs user
+# if [ "$UID" -eq 0 ]; then
+#     user_color=${red} # red for root
+# else
+#     user_color=${purple} # default user color
+# fi
+
 # Custom Prompt
 PS1="\[${bold}\]\n"
 PS1+="\[${purple}\]\u" #username
-PS1+="\[${white}\]@"   #username
+PS1+="\[${white}\]@"
 PS1+="\[${green}\]\h " #hostname
 PS1+="\[${white}\]in "
 PS1+="\[${yellow}\]\W"                  #base directory
