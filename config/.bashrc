@@ -44,3 +44,7 @@ PS1+="\n"                               #new line
 PS1+="\[${white}\]-> \[${reset}\]"
 
 export PS1
+
+# Aliases
+alias ..="cd .."
+alias proj="cd D:\Projects"
