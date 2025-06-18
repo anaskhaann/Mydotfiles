@@ -117,6 +117,7 @@
   "notebook.formatOnSave.enabled": true,
   "notebook.lineNumbers": "on",
   "notebook.scrolling.revealNextCellOnExecute": "none",
+  "notebook.output.wordWrap": true,
 
   // Plaintext settings
   "[plaintext]": {
@@ -125,6 +126,11 @@
       "strings": "off",
       "other": "off"
     }
+  },
+
+  // Shell script settings
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
 
   // Disable Telemetary and Experimental Features
