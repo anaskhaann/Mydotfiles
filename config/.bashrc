@@ -1,5 +1,4 @@
 # Colours for Prompts
-# setaf --> foreground
 cyan=$(tput setaf 051)
 purple=$(tput setaf 005)
 green=$(tput setaf 71)
@@ -8,8 +7,7 @@ white=$(tput setaf 15)
 bold=$(tput bold)
 reset=$(tput sgr0) #reset
 
-# \[\] --> To handle Continuity for scripts
-# ${} --> For accessing variable
+# Custom Prompt
 PS1="\[${bold}\]\n"
 PS1+="\[${purple}\]\u"  #username
 PS1+="\[${white}\] at " #username
