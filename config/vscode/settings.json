@@ -18,7 +18,7 @@
 
   // Workspace and UI settings
   "workbench.iconTheme": "ayu",
-  "workbench.colorTheme": "Vim Deep Dark",
+  "workbench.colorTheme": "Houston",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "bottom",
@@ -30,6 +30,9 @@
   "explorer.confirmDragAndDrop": false,
 
   // Python-specific settings
+  "python.venvPath": "${workspaceFolder}",
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": false,
   "python.analysis.autoFormatStrings": true,
   "python.locator": "js",
   "[python]": {
