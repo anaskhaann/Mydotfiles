@@ -6,7 +6,6 @@
   // Editor display and interaction settings
   "editor.wordWrap": "on",
   "editor.mouseWheelZoom": true,
-  "editor.autoClosingBrackets": "always",
   "editor.parameterHints.enabled": false,
   "editor.cursorBlinking": "expand",
   "editor.fontFamily": "'JetBrains Mono','Fira Code','Cascadia Code'",
@@ -14,7 +13,12 @@
   "editor.formatOnSave": true,
   "editor.minimap.autohide": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.quickSuggestionsDelay": 1000,
+  "editor.quickSuggestionsDelay": 500,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
 
   // Workspace and UI settings
   "workbench.iconTheme": "ayu",
@@ -22,9 +26,8 @@
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "bottom",
-  // "workbench.settings.useSplitJSON": true,
+  "workbench.settings.useSplitJSON": true,
   "workbench.settings.editor": "json",
-  "workbench.editor.empty.hint": "hidden",
 
   // File explorer behavior
   "explorer.confirmDelete": false,
@@ -50,11 +53,9 @@
   "python.locator": "js",
   "python.venvPath": "${workspaceFolder}",
   "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-  "python.terminal.activateEnvironment": false,
   "python.analysis.autoFormatStrings": true,
   // "python.analysis.inlayHints.functionReturnTypes": true,
   // "python.analysis.inlayHints.variableTypes": true,
-  // "python.analysis.typeCheckingMode": "off", //Disable Pylance Checking
 
   /*
   Terminal Settings
@@ -98,6 +99,11 @@
   },
 
   /*
+  Git Workspace
+  */
+  "git.openRepositoryInParentFolders": "always",
+
+  /*
   Extension Specific Settings
   */
 
@@ -105,21 +111,15 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
 
-  // Live Preview setting
-  "livePreview.openPreviewTarget": "External Browser",
-
   // Code Runner Settings
   "code-runner.clearPreviousOutput": true,
-  // "code-runner.runInTerminal": true,
   "code-runner.showExecutionMessage": false,
-  "code-runner.saveFileBeforeRun": true,
   "code-runner.fileDirectoryAsCwd": true,
   "code-runner.ignoreSelection": true,
   "code-runner.enableAppInsights": false,
   "code-runner.executorMap": {
     // ... Your full executor map remains unchanged
-    "python": "python -u",
-    "powershell": "powershell -ExecutionPolicy ByPass -File"
+    "python": "python -u $fullFileName"
     // (Other languages preserved as-is)
   },
 
