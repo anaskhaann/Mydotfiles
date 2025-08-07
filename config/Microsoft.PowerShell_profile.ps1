@@ -59,3 +59,25 @@ function prompt {
     
     return "-> "
 }
+
+
+# Aliases
+# $ - for single arguments
+# @ - for multiple arguments
+# Git Aliases
+
+function gs{
+    git status
+}
+
+function ga {
+    git add @args
+}
+
+function glo {
+    git log --oneline
+}
+
+function gcmm {
+    git commit -m "$args"
+}

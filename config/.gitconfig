@@ -2,6 +2,7 @@
 	name = Mohd Anas Khan
 	email = 119879801+anaskhaann@users.noreply.github.com
 [core]
-	editor = code --wait
+	editor = code --wait #Editor set to vs code
+	autocrlf = true #ignore warnings LF replace by CRLF Lines
 [init]
-	defaultBranch = main
+	defaultBranch = main #Default branch always main
