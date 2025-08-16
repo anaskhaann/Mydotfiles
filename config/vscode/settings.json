@@ -11,14 +11,9 @@
   "editor.fontFamily": "'JetBrains Mono','Fira Code','Cascadia Code'",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.quickSuggestionsDelay": 500,
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "off",
-    "strings": "off"
-  },
 
   // Workspace and UI settings
   "workbench.iconTheme": "ayu",
@@ -81,15 +76,6 @@
     },
     "Windows PowerShell": {
       "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    }
-  },
-
-  // Plaintext file settings
-  "[plaintext]": {
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
     }
   },
 

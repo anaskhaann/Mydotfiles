@@ -3,6 +3,12 @@
 	email = 119879801+anaskhaann@users.noreply.github.com
 [core]
 	editor = code --wait #Editor set to vs code
-	autocrlf = true #ignore warnings LF replace by CRLF Lines
+	autocrlf = true #Line Space Ending Set to True since I work on windows
+	safecrlf = false #Silent the line endings warnings LF to CRLF
 [init]
 	defaultBranch = main #Default branch always main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
