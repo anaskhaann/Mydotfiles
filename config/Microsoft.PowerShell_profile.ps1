@@ -62,16 +62,16 @@ function prompt {
 
 
 # Aliases
-# $ - for single arguments
-# @ - for multiple arguments
-# Git Aliases
+# $args - for variables (create an array of all variable pass to it)
+# @args - for action(to unpack the collected variables for othe commands)
 
+# Git Aliases
 function gs{
     git status
 }
 
 function ga {
-    git add @args
+    git add $args
 }
 
 function glo {
@@ -80,4 +80,15 @@ function glo {
 
 function gcmm {
     git commit -m "$args"
+}
+
+# count git commits
+function gcount{
+    git rev-list --count HEAD
+}
+
+# Uv Aliases
+function uvp {
+    # to the 'uv pip install' command.
+    uv pip install $args
 }
