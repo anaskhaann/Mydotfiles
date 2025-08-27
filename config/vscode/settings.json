@@ -13,11 +13,12 @@
   "editor.formatOnSave": true,
   "editor.minimap.autohide": "mouseover",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.quickSuggestionsDelay": 500,
+  "editor.quickSuggestionsDelay": 100,
+  "editor.snippetSuggestions": "top",
 
   // Workspace and UI settings
   "workbench.iconTheme": "ayu",
-  "workbench.colorTheme": "Houston",
+  "workbench.colorTheme": "Bearded Theme Monokai Black",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "bottom",
@@ -39,7 +40,7 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
       // "source.fixAll":"explicit",
-      "source.unusedImports": "explicit",
+      "source.unusedImports": "never",
       "source.organizeImports.ruff": "explicit"
     }
   },
@@ -48,9 +49,7 @@
   "python.locator": "js",
   "python.venvPath": "${workspaceFolder}",
   "python.defaultInterpreterPath": "d:\\Apps\\Python Main\\python.exe",
-  "python.analysis.autoFormatStrings": true,
-  // "python.analysis.inlayHints.functionReturnTypes": true,
-  // "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.autoImportCompletions": true,
   "python.useEnvironmentsExtension": true, //Temporary(Remove Later)
 
   /*
@@ -161,5 +160,6 @@
   "security.allowedUNCHosts": ["wsl.localhost"], //Allows to access files across network
   "mdb.sendTelemetry": false,
   "telemetry.feedback.enabled": false,
-  "update.showReleaseNotes": false
+  "update.showReleaseNotes": false,
+  "markdown-preview-enhanced.enablePreviewZenMode": true
 }
