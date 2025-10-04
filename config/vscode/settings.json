@@ -8,24 +8,24 @@
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.enabled": false,
   "editor.cursorBlinking": "expand",
-  "editor.fontFamily": "'JetBrains Mono','Fira Code','Cascadia Code'",
+  "editor.fontFamily": "'JetBrains Mono','Fira Code'",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.minimap.autohide": "mouseover",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.quickSuggestionsDelay": 100,
   "editor.snippetSuggestions": "top",
-  "editor.inlineSuggest.fontFamily": "Cascadia Code",
+  "editor.inlineSuggest.fontFamily": "Fira Code",
 
   // Themes and UI
-  "workbench.colorTheme": "Bearded Theme Coffee Cream", //Light theme
-  // "workbench.colorTheme": "Bearded Theme Monokai Black", //Dark theme
-  "workbench.iconTheme": "vscode-icons",
+  // "workbench.colorTheme": "Bearded Theme Milkshake Mint", //Light theme
+  "workbench.colorTheme": "Catppuccin Frappé", //Dark theme
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
-  "workbench.activityBar.location": "bottom",
+  // "workbench.activityBar.location": "default",
   "workbench.settings.editor": "json",
-  "workbench.settings.useSplitJSON": true, //Uncomment when needed
+  // "workbench.settings.useSplitJSON": true, //Uncomment when needed
 
   // File explorer behavior
   "explorer.confirmDelete": false,
@@ -36,8 +36,12 @@
     "*": false,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "dotenv": false
   },
+
+  "chat.editor.wordWrap": "on",
+  "inlineChat.lineNaturalLanguageHint": false,
 
   /*
   Python Specific Settings
@@ -45,13 +49,11 @@
 
   // Python File
   "[python]": {
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
-      // "source.fixAll":"explicit",
       "source.unusedImports": "never",
-      "source.organizeImports.ruff": "explicit"
+      "source.organizeImports": "explicit"
     }
   },
 
@@ -59,33 +61,25 @@
   "python.venvPath": "${workspaceFolder}",
   "python.defaultInterpreterPath": "d:\\Apps\\Python Main\\python.exe",
   "python.analysis.autoImportCompletions": true,
+
   "python.useEnvironmentsExtension": true, //Temporary(Remove Later)
+
+  /*
+    Jinja templates formatting
+    Jinja2, and Django settings
+  */
+  "djlint.useVenv": false,
+  "djlint.pythonPath": "C:\\Users\\anasn\\AppData\\Roaming\\uv\\tools\\djlint\\Scripts\\python",
+  "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "djlint.ignore": ["H030", "H031", "D004", "H023", "H008"],
 
   /*
   Terminal Settings
   */
   "terminal.integrated.fontWeight": "600",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash"
-    },
-    "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    }
-  },
 
   // Toml File Settings
   "[toml]": {
@@ -107,16 +101,11 @@
   "liveServer.settings.donotVerifyTags": true,
 
   // Code Runner Settings
+  "code-runner.runInTerminal": true,
   "code-runner.clearPreviousOutput": true,
   "code-runner.showExecutionMessage": false,
-  "code-runner.fileDirectoryAsCwd": true,
   "code-runner.ignoreSelection": true,
   "code-runner.enableAppInsights": false,
-  "code-runner.executorMap": {
-    // ... Your full executor map remains unchanged
-    "python": "python -u $fullFileName"
-    // (Other languages preserved as-is)
-  },
 
   // Markdown preview settings
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
@@ -129,19 +118,22 @@
   // Codeium/Windsurf Settings
   "codeium.enableConfig": {
     "*": true,
-    "markdown": true
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "dotenv": false
   },
   "codeium.enableCodeLens": false,
   "codeium.snoozeTime": 1200,
   "codeium.enableExplainProblem": false,
 
   //Jupyter Notebook settings
-  "notebook.output.scrolling": true,
   "notebook.formatOnSave.enabled": true,
   "notebook.defaultFormatter": "charliermarsh.ruff",
   "notebook.lineNumbers": "on",
   "notebook.scrolling.revealNextCellOnExecute": "firstLine",
   "notebook.output.wordWrap": true,
+  "notebook.output.scrolling": true,
 
   // Shell script Files settings
   "[shellscript]": {
@@ -176,5 +168,7 @@
   "security.allowedUNCHosts": ["wsl.localhost"], //Allows to access files across network
   "mdb.sendTelemetry": false,
   "telemetry.feedback.enabled": false,
-  "update.showReleaseNotes": false
+  "update.showReleaseNotes": false,
+  "mdb.mcp.server": "disabled",
+  "telemetry.editStats.enabled": false
 }
