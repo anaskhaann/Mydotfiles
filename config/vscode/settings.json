@@ -18,8 +18,8 @@
   "editor.inlineSuggest.fontFamily": "Fira Code",
 
   // Themes and UI
-  // "workbench.colorTheme": "Bearded Theme Milkshake Mint", //Light theme
-  "workbench.colorTheme": "Catppuccin Frappé", //Dark theme
+  "workbench.colorTheme": "Bearded Theme Milkshake Mint", //Light theme
+  // "workbench.colorTheme": "Gruvbox Dark Hard", //Dark theme
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
@@ -54,7 +54,8 @@
     "editor.codeActionsOnSave": {
       "source.unusedImports": "never",
       "source.organizeImports": "explicit"
-    }
+    },
+    "editor.showUnused": false
   },
 
   // Venv, Formatting and Others
@@ -169,6 +170,6 @@
   "mdb.sendTelemetry": false,
   "telemetry.feedback.enabled": false,
   "update.showReleaseNotes": false,
-  "mdb.mcp.server": "disabled",
+  "mdb.mcp.server": "autoStartDisabled",
   "telemetry.editStats.enabled": false
 }
