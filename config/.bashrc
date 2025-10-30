@@ -9,7 +9,7 @@ white=$(tput setaf 15)
 bold=$(tput bold)
 reset=$(tput sgr0) #reset
 
-# Git Branch Function
+# ================================== Get Git Branch Function ==================================
 parse_git_branch() {
     # Check if we are inside a Git repository
     # If not, 'return' immediately and print nothing.
@@ -32,7 +32,7 @@ parse_git_branch() {
 #     user_color=${purple} # default user color
 # fi
 
-# Custom Prompt
+# ================================== Custom Prompt ==================================
 PS1="\[${bold}\]\n"
 PS1+="\[${purple}\]\u" #username
 PS1+="\[${white}\]@"
@@ -45,9 +45,17 @@ PS1+="\[${white}\]-> \[${reset}\]"
 
 export PS1
 
-# Aliases
+# ================================== Aliases ==================================
 
 alias ..="cd .."
-alias proj="cd D:\Projects"
-alias gcm="git commit -m"
 alias cls="clear"
+
+# Git Aliases
+alias gcmm="git commit -m"
+alias gs="git status"
+alias ga="git add"
+alias glo="git log --oneline"
+alias gcount="git rev-list --count HEAD" # count git commits
+
+# Uv Aliases
+alias uvp="uv pip install"

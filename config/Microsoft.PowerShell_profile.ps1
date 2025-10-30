@@ -1,4 +1,4 @@
-# Color definitions for prompt elements
+# ========================================= Color definitions for prompt elements
 $Color_Username = "DarkMagenta"
 $Color_AtSign = "White"
 $Color_Hostname = "Green"
@@ -6,7 +6,7 @@ $Color_InText = "White"
 $Color_Directory = "Yellow"
 $Color_GitBranch = "Cyan"
 
-# Configure PSReadLine to use white for all input text
+# ===================================== Configure PSReadLine to use white for all input text
 Set-PSReadlineOption -Colors @{
     "Command" = "White"           
     "Parameter" = "DarkGray"       
@@ -24,6 +24,7 @@ Set-PSReadlineOption -Colors @{
     "Default" = "White"
 }
 
+# ============================== Git Branch
 # Get current Git branch name, returns null if not in a Git repository
 function Get-GitBranchName {
     if (-not (git rev-parse --is-inside-work-tree 2>$null)) {
@@ -37,7 +38,7 @@ function Get-GitBranchName {
     return $null
 }
 
-# Custom prompt function
+# ============================== Custom prompt function
 function prompt {
     # Build prompt: username@hostname in directory (git-branch)
     Write-Host "$env:USERNAME" -NoNewline -ForegroundColor $Color_Username
@@ -61,7 +62,7 @@ function prompt {
 }
 
 
-# Aliases
+# ================================== Custom Aliases
 # $args - for variables (create an array of all variable pass to it)
 # @args - for action(to unpack the collected variables for othe commands)
 
@@ -93,3 +94,8 @@ function uvp {
     uv pip install $args
 }
 
+
+# ============================== Starship Prompt
+# Needs nerd font
+# Needs starship to be install
+Invoke-Expression (&starship init powershell)

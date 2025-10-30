@@ -18,8 +18,8 @@
   "editor.inlineSuggest.fontFamily": "Fira Code",
 
   // Themes and UI
-  "workbench.colorTheme": "Bearded Theme Milkshake Mint", //Light theme
-  // "workbench.colorTheme": "Gruvbox Dark Hard", //Dark theme
+  // "workbench.colorTheme": "Bearded Theme Milkshake Mint", //Light theme
+  "workbench.colorTheme": "Gruvbox Dark Hard", //Dark theme
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
@@ -81,6 +81,7 @@
   */
   "terminal.integrated.fontWeight": "600",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontLigatures.enabled": true,
 
   // Toml File Settings
   "[toml]": {

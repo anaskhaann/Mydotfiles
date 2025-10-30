@@ -68,6 +68,4 @@ This will be update in future, It will includes the scripts to install softwares
 
 ## **TODOs**
 
-- [ ] Create winget id for all available softwares.
-
 - [ ] Create a Script to install the softwares using winget(or other better package manager).

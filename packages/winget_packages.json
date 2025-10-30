@@ -1,0 +1,77 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2025-10-29T11:57:57.276-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "7zip.7zip"
+        },
+        {
+          "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfo"
+        },
+        {
+          "PackageIdentifier": "Docker.DockerDesktop"
+        },
+        {
+          "PackageIdentifier": "Git.Git"
+        },
+        {
+          "PackageIdentifier": "Mozilla.Firefox"
+        },
+        {
+          "PackageIdentifier": "RARLab.WinRAR"
+        },
+        {
+          "PackageIdentifier": "GitHub.GitLFS"
+        },
+        {
+          "PackageIdentifier": "DBBrowserForSQLite.DBBrowserForSQLite"
+        },
+        {
+          "PackageIdentifier": "PDFgear.PDFgear"
+        },
+        {
+          "PackageIdentifier": "Nvidia.PhysX"
+        },
+        {
+          "PackageIdentifier": "OpenJS.NodeJS.LTS"
+        },
+        {
+          "PackageIdentifier": "Brave.Brave"
+        },
+        {
+          "PackageIdentifier": "Tonec.InternetDownloadManager"
+        },
+        {
+          "PackageIdentifier": "OBSProject.OBSStudio"
+        },
+        {
+          "PackageIdentifier": "Gyan.FFmpeg"
+        },
+        {
+          "PackageIdentifier": "LocalSend.LocalSend"
+        },
+        {
+          "PackageIdentifier": "Ollama.Ollama"
+        },
+        {
+          "PackageIdentifier": "Codeium.Windsurf"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode"
+        },
+        {
+          "PackageIdentifier": "Starship.Starship"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.11.510"
+}
