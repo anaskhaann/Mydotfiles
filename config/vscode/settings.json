@@ -8,7 +8,7 @@
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.enabled": false,
   "editor.cursorBlinking": "expand",
-  "editor.fontFamily": "'JetBrains Mono','Fira Code'",
+  "editor.fontFamily": "'JetBrains Mono Nerd Font','Caskaydia Cove Nerd Font','JetBrains Mono','Fira Code'",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.minimap.autohide": "mouseover",
@@ -18,7 +18,7 @@
   "editor.inlineSuggest.fontFamily": "Fira Code",
 
   // Themes and UI
-  // "workbench.colorTheme": "Bearded Theme Milkshake Mint", //Light theme
+  // "workbench.colorTheme": "Bearded Theme feat. Mintshake D Raynh", //Light theme
   "workbench.colorTheme": "Gruvbox Dark Hard", //Dark theme
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -33,7 +33,7 @@
 
   // GitHub CoPilot inline enable/disable
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
@@ -57,12 +57,9 @@
     },
     "editor.showUnused": false
   },
-
-  // Venv, Formatting and Others
   "python.venvPath": "${workspaceFolder}",
   "python.defaultInterpreterPath": "d:\\Apps\\Python Main\\python.exe",
   "python.analysis.autoImportCompletions": true,
-
   "python.useEnvironmentsExtension": true, //Temporary(Remove Later)
 
   /*
@@ -79,9 +76,12 @@
   /*
   Terminal Settings
   */
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.fontLigatures.featureSettings": "\"calt\" on",
   "terminal.integrated.fontWeight": "600",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.stickyScroll.enabled": false,
 
   // Toml File Settings
   "[toml]": {
@@ -118,24 +118,25 @@
   // },
 
   // Codeium/Windsurf Settings
-  "codeium.enableConfig": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "dotenv": false
-  },
-  "codeium.enableCodeLens": false,
-  "codeium.snoozeTime": 1200,
-  "codeium.enableExplainProblem": false,
+  // "codeium.enableConfig": {
+  //   "*": true,
+  //   "plaintext": false,
+  //   "markdown": false,
+  //   "scminput": false,
+  //   "dotenv": false
+  // },
+  // "codeium.enableCodeLens": false,
+  // "codeium.snoozeTime": 1200,
+  // "codeium.enableExplainProblem": false,
 
   //Jupyter Notebook settings
   "notebook.formatOnSave.enabled": true,
   "notebook.defaultFormatter": "charliermarsh.ruff",
   "notebook.lineNumbers": "on",
-  "notebook.scrolling.revealNextCellOnExecute": "firstLine",
   "notebook.output.wordWrap": true,
+  "notebook.output.minimalErrorRendering": true,
   "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 15,
 
   // Shell script Files settings
   "[shellscript]": {

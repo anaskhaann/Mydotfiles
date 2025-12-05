@@ -60,9 +60,45 @@ _The below is the **PowerShell command** to get all list of installed packages i
 Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*, HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Where-Object { $_.DisplayName -ne $null -and $_.SystemComponent -ne 1 } | Select-Object DisplayName, DisplayVersion | Sort-Object DisplayName > installed_apps.txt
 ```
 
+_The below is the **Power Shell Command** to export all the list of packages installed with winget_
+
+```powershell
+    winget export -o .\packages\winget_packages.json --accept-source-agreements
+```
+
 ## **Scipts**
 
-This will be update in future, It will includes the scripts to install softwares, packages and setup the profiles/configs.
+`scripts\`
+
+#### VS CODE CONFIGS
+
+Run the below command to export the current list of extensions.
+
+```bash
+code --list-extensions > .\config\vscode\extensions.txt
+```
+
+Run the below command to install the current list of extensions.
+
+**Mac/Linux**
+
+```bash
+while read extension; do code --install-extension "$extension"; done < .\config\vscode\extensions.txt
+```
+
+**Powershell**
+
+```powershell
+Get-Content .\config\vscode\extensions.txt | ForEach-Object { code --install-extension $_ }
+```
+
+#### Installing winget packages
+
+_The below is the **Power Shell Command** to import all the list of packages installed with winget_
+
+```powershell
+    winget import -i .\packages\winget_packages.json --accept-source-agreements
+```
 
 </details>
 
